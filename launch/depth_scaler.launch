@@ -1,5 +1,5 @@
 <launch>
-    <node pkg="depth_scaler" type="depth_crop_to_pointcloud.py" name="depth_crop_to_pointcloud" output="screen">
+    <node pkg="depth_scaler" type="depthimage_crop_to_pointcloud.py" name="depthimage_crop_to_pointcloud" output="screen">
         <param name="crop_x" value="100" />
         <param name="crop_y" value="50" />
         <param name="crop_width" value="300" />
