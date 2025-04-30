@@ -20,7 +20,7 @@ class DepthCropToPointCloud:
         self.bridge = CvBridge()
  
         # Subscribers
-        self.sub_depth = rospy.Subscriber("/camera/depth/image_raw", Image, self.depth_callback)
+        self.sub_depth = rospy.Subscriber("/camera/depth/image_rect_raw", Image, self.depth_callback)
         self.sub_info = rospy.Subscriber("/camera/depth/camera_info", CameraInfo, self.info_callback)
  
         # Publisher
